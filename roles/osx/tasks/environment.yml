@@ -2,6 +2,14 @@
 
 - git: repo=https://github.com/forkedjensh/dotfiles.git
        dest=~/dotfiles
-- file: src=~/dotfiles/_vimrc dest=~/.vimrc
-- file: src=~/dotfiles/_zshrc dest=~/.zshrc
-- file: src=~/dotfiles/_tmux.conf dest=~/.tmux.conf
+- file: src={{item.value.src}} dest={{item.value.dest}}
+  with_dict:
+    vimrc:
+      src: ~/dotfiles/_vimrc
+      dest: ~/.vimrc
+    zshrc:
+      src: ~/dotfiles/_zshrc
+      dest: ~/.zshrc
+    tmuxconf:
+      src: ~/dotfiles/_tmux.conf
+      dest: ~/.tmux.conf
