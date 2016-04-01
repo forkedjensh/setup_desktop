@@ -1,5 +1,15 @@
 ---
 
+- name: activate hombrew taps
+  homebrew_tap: >
+    tap={{item}}
+    state=present
+  with_items:
+    - caskroom/cask
+    - homebrew/dupes
+    - homebrew/science
+    - homebrew/x11
+
 - name: install homebrew packages
   homebrew:
     name: "{{item}}"
@@ -190,11 +200,6 @@
     - yasm
     - zeromq
     - zsh
-
-- name: install homebrew cask
-  homebrew:
-    name: caskroom/cask/brew-cask
-    state: present
 
 - name: install homebrew casks
   homebrew_cask:
