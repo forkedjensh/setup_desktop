@@ -1,0 +1,5 @@
+---
+
+- name: disable sound on boot
+  sudo: yes
+  command: nvram SystemAudioVolume=" "
