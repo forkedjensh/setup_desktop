@@ -1,7 +1,7 @@
 ---
 
 - git: repo=https://github.com/forkedjensh/dotfiles.git
-       dest=~/dotfiles
+       dest={{ ansible_env.HOME }}/dotfiles
 - file: src={{item.value.src}} dest={{item.value.dest}}
   with_dict:
     vimrc:

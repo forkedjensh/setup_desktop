@@ -2,7 +2,7 @@
 
 - name: activate hombrew taps
   homebrew_tap: >
-    tap={{item}}
+    tap={{ item }}
     state=present
   with_items:
     - caskroom/cask
@@ -12,7 +12,7 @@
 
 - name: install homebrew packages
   homebrew:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: present
   with_items:
     - ansible
@@ -203,7 +203,7 @@
 
 - name: install homebrew casks
   homebrew_cask:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: present
   with_items:
     - adium
