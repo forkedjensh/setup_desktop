@@ -1,8 +1,10 @@
 ---
 
-- git: repo=https://github.com/forkedjensh/dotfiles.git
+- name: Clone dot files
+  git: repo=https://github.com/forkedjensh/dotfiles.git
        dest={{ ansible_env.HOME }}/dotfiles
-- file: src={{item.value.src}} dest={{item.value.dest}}
+- name: Link dot files
+  file: src={{item.value.src}} dest={{item.value.dest}}
   with_dict:
     vimrc:
       src: ~/dotfiles/_vimrc
