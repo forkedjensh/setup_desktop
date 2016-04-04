@@ -1,8 +1,20 @@
 ---
 
+- name: Create bin directory
+  file: path={{ansible_env.HOME}}/bin state=directory
+
+- name: Create develop directory
+  file: path={{ansible_env.HOME}}/develop state=directory
+
 - name: Clone dot files
   git: repo=https://github.com/forkedjensh/dotfiles.git
        dest={{ ansible_env.HOME }}/dotfiles
+  notify:
+    - Prepare vim
+    - Install vim plugins
+    - Postprocess vim YCM
+    - Get rst2ctags for vim tagbar
+
 - name: Link dot files
   file: src={{item.value.src}} dest={{item.value.dest}}
   with_dict:

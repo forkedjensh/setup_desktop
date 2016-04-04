@@ -2,4 +2,4 @@
 
 - hosts: localhost
   roles:
-      - { role: osx, when: "ansible_os_family == 'Darwin'" }
+      - { role: osxdesktop, when: "ansible_os_family == 'Darwin'" }
