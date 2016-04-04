@@ -13,7 +13,7 @@
     - Prepare vim
     - Install vim plugins
     - Postprocess vim YCM
-    - Get rst2ctags for vim tagbar
+    - Get rst2ctags.py for vim tagbar
 
 - name: Link dot files
   file: src={{item.value.src}} dest={{item.value.dest}}

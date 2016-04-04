@@ -15,10 +15,10 @@
     ./install.py
     chdir={{ansible_env.HOME}}/.vim/bundle/YouCompleteMe
 
-- name: Get rst2ctags for vim tagbar
+- name: Get rst2ctags.py for vim tagbar
   get_url: >
       url=https://raw.githubusercontent.com/jszakmeister/rst2ctags/master/rst2ctags.py
       dest={{ansible_env.HOME}}/bin/rst2ctags.py
-      mode="0644"
+      mode="0755"
 
 ### END PREPARE VIM
