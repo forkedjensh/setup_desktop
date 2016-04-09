@@ -203,7 +203,6 @@ homebrew_cask_packages:
   - basictex
   - chromium
   - citrix-receiver
-  - cord
   - cyberduck
   - dia
   - firefox
