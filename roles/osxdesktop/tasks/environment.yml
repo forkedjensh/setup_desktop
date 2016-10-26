@@ -6,6 +6,9 @@
 - name: Create develop directory
   file: path={{ansible_env.HOME}}/develop state=directory
 
+- name: Create .tmp directory
+  file: path={{ansible_env.HOME}}/.cache/tmp state=directory
+
 - name: Clone dot files
   git: repo=https://github.com/forkedjensh/dotfiles.git
        dest={{ ansible_env.HOME }}/dotfiles
