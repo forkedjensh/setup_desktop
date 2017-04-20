@@ -7,11 +7,14 @@ homebrew_taps:
   - homebrew/x11
 
 homebrew_packages:
+  - a2ps
+  - adns
   - ansible
   - asciidoc
   - atk
   - atkmm
   - autoconf
+  - autoconf-archive
   - autoenv
   - automake
   - bash-completion
@@ -27,17 +30,22 @@ homebrew_packages:
   - cairomm
   - cloog
   - cmake
+  - confuse
   - coreutils
   - cscope
   - ctags
+  - curl
   - czmq
   - d-bus
+  - dblatex
+  - dbus
   - ddrescue
   - dirmngr
   - docbook
   - docbook-xsl
   - docker
   - dos2unix
+  - doxygen
   - dsh
   - duplicity
   - duply
@@ -55,16 +63,19 @@ homebrew_packages:
   - frei0r
   - fribidi
   - gcc
+  - gd
   - gdbm
   - gdk-pixbuf
   - geoip
   - gettext
-  - gcc
+  - gfortran
   - ghostscript
   - git
+  - git-annex
   - glib
   - glibmm
   - gmp
+  - gmp@4
   - gnu-sed
   - gnupg
   - gnupg2
@@ -81,9 +92,11 @@ homebrew_packages:
   - hicolor-icon-theme
   - htop-osx
   - icu4c
+  - inkscape
   - ircii
   - irssi
   - isl
+  - isl@0.12
   - jasper
   - jbig2dec
   - jpeg
@@ -99,12 +112,14 @@ homebrew_packages:
   - libffi
   - libgcrypt
   - libgpg-error
+  - libidn
   - libksba
   - libmagic
   - libmatroska
   - libmpc
   - libogg
   - libpng
+  - libquvi
   - librsvg
   - librsync
   - libsigc++
@@ -112,6 +127,7 @@ homebrew_packages:
   - libtasn1
   - libtiff
   - libtool
+  - libunistring
   - libusb
   - libusb-compat
   - libvirt
@@ -121,6 +137,7 @@ homebrew_packages:
   - libyaml
   - little-cms
   - little-cms2
+  - lua
   - lzip
   - lzo
   - maven
@@ -129,23 +146,29 @@ homebrew_packages:
   - mkvtoolnix
   - mpfr
   - mysql
+  - netcat
   - netpbm
   - nettle
   - newt
   - nmap
+  - npth
   - opencore-amr
   - openjpeg
   - openldap
   - openssl
+  - openssl@1.1
   - opus
   - orc
   - ossp-uuid
+  - p11-kit
   - p7zip
   - pandoc
   - pango
   - pangomm
   - pcre
+  - perl
   - pinentry
+  - pinentry-mac
   - pixman
   - pkg-config
   - plantuml
@@ -153,13 +176,20 @@ homebrew_packages:
   - postgresql
   - pth
   - pwgen
+  - py2cairo
   - pyenv
   - pyenv-virtualenv
   - pyenv-virtualenvwrapper
+  - pygobject
+  - pygobject3
+  - pygtk
   - pyqt
   - python
   - python3
+  - qemu
   - qt
+  - qt5
+  - quvi
   - r
   - rdesktop
   - readline
@@ -168,6 +198,7 @@ homebrew_packages:
   - s-lang
   - schroedinger
   - sdl
+  - shared-mime-info
   - shiboken
   - sip
   - sl
@@ -177,14 +208,17 @@ homebrew_packages:
   - swig
   - tesseract
   - texi2html
+  - texinfo
   - theora
   - tmux
   - tree
   - unpaper
+  - utf8proc
   - vim
+  - webp
   - wget
-  - wireshark
   - x264
+  - xdot
   - xvid
   - xz
   - yajl
@@ -194,11 +228,13 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - adium
+  - airmedia
   - amazon-music
   - apache-directory-studio
+  - atom
   - avidemux
-  - battle-net
   - basictex
+  - battle-net
   - chromium
   - citrix-receiver
   - cyberduck
@@ -207,10 +243,10 @@ homebrew_cask_packages:
   - freecol
   - freemind
   - gimp
-  - grandperspective
+  - gog-galaxy
+  - google-chrome
   - handbrake
   - handbrakebatch
-  - handbrakecli
   - hedgewars
   - inkscape
   - iterm2
@@ -220,14 +256,14 @@ homebrew_cask_packages:
   - libreoffice
   - macvim
   - makemkv
-  - mediathekview
   - minecraft
-  - onyx
   - openttd
   - owncloud
   - projectlibre
   - scribus
   - scummvm
+  - silverlight
+  - soundflower
   - steam
   - subler
   - teamviewer
@@ -238,7 +274,6 @@ homebrew_cask_packages:
   - vagrant
   - vagrant-manager
   - virtualbox
-  - virtualbox-extension-pack
   - vlc
   - wireshark
   - xmind
