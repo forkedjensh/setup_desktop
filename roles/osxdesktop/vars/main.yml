@@ -274,6 +274,7 @@ homebrew_cask_packages:
   - vagrant
   - vagrant-manager
   - virtualbox
+  - virtualbox-extension-pack
   - vlc
   - wireshark
   - xmind
