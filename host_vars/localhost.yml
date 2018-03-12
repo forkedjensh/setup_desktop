@@ -1,7 +1,41 @@
 ---
 
+vim_dirs:
+  - ~/.vim/backup
+  - ~/.vim/undo
+  - ~/.vim/swp
+  - ~/.vim/pack/mypack/start
+  - ~/.vim/pack/mypack/opt
+
+vim_plugin_target: ~/.vim/pack/mypack/start/
+
+vim_plugins:
+  - kien/ctrlp.vim
+  - tpope/vim-commentary
+  - tpope/vim-surround
+  - tpope/vim-unimpaired
+  - tpope/vim-vinegar
+  - honza/vim-snippets
+  - SirVer/ultisnips
+  - maralla/completor.vim
+  - dhruvasagar/vim-table-mode
+  - jmcantrell/vim-virtualenv
+  - majutsushi/tagbar
+  - tpope/vim-fugitive
+  - w0rp/ale
+  - Yggdroot/indentLine
+  - forkedjensh/plantuml-syntax
+  - pearofducks/ansible-vim
+  - Rykka/riv.vim
+  - wannesm/wmgraphviz.vim
+  - lifepillar/vim-solarized8
+  - morhetz/gruvbox
+  - itchyny/lightline.vim
+  - mgee/lightline-bufferline
+
 homebrew_taps:
   - caskroom/cask
+  - caskroom/fonts
   - homebrew/dupes
   - homebrew/science
   - homebrew/x11
@@ -23,7 +57,6 @@ homebrew_packages:
   - berkeley-db
   - bmon
   - boost
-  - boot2docker
   - byobu
   - c-ares
   - cairo
@@ -37,13 +70,11 @@ homebrew_packages:
   - curl
   - czmq
   - d-bus
-  - dblatex
   - dbus
   - ddrescue
   - dirmngr
   - docbook
   - docbook-xsl
-  - docker
   - dos2unix
   - doxygen
   - dsh
@@ -58,6 +89,7 @@ homebrew_packages:
   - fondu
   - fontconfig
   - fontforge
+  - fonttools
   - freerdp
   - freetype
   - frei0r
@@ -66,9 +98,9 @@ homebrew_packages:
   - gd
   - gdbm
   - gdk-pixbuf
+  - geckodriver
   - geoip
   - gettext
-  - gfortran
   - ghostscript
   - git
   - git-annex
@@ -82,6 +114,7 @@ homebrew_packages:
   - gnutls
   - gobject-introspection
   - gpg-agent
+  - graphite2
   - graphviz
   - gsasl
   - gsl
@@ -90,9 +123,11 @@ homebrew_packages:
   - gts
   - harfbuzz
   - hicolor-icon-theme
+  - htop
   - htop-osx
   - icu4c
-  - inkscape
+  - iperf
+  - ipython@5
   - ircii
   - irssi
   - isl
@@ -100,6 +135,7 @@ homebrew_packages:
   - jasper
   - jbig2dec
   - jpeg
+  - jupyter
   - lame
   - leptonica
   - libass
@@ -113,6 +149,7 @@ homebrew_packages:
   - libgcrypt
   - libgpg-error
   - libidn
+  - libidn2
   - libksba
   - libmagic
   - libmatroska
@@ -138,14 +175,19 @@ homebrew_packages:
   - little-cms
   - little-cms2
   - lua
+  - lua@5.1
   - lzip
   - lzo
+  - macvim
   - maven
   - media-info
   - mercurial
   - mkvtoolnix
   - mpfr
+  - msmtp
+  - mutt
   - mysql
+  - ncurses
   - netcat
   - netpbm
   - nettle
@@ -165,6 +207,7 @@ homebrew_packages:
   - pandoc
   - pango
   - pangomm
+  - paps
   - pcre
   - perl
   - pinentry
@@ -186,6 +229,7 @@ homebrew_packages:
   - pyqt
   - python
   - python3
+  - python@2
   - qemu
   - qt
   - qt5
@@ -196,10 +240,10 @@ homebrew_packages:
   - rtmpdump
   - ruby
   - s-lang
+  - s3cmd
   - schroedinger
   - sdl
   - shared-mime-info
-  - shiboken
   - sip
   - sl
   - source-highlight
@@ -211,6 +255,7 @@ homebrew_packages:
   - texinfo
   - theora
   - tmux
+  - tokyo-cabinet
   - tree
   - unpaper
   - utf8proc
@@ -229,7 +274,6 @@ homebrew_packages:
 homebrew_cask_packages:
   - adium
   - airmedia
-  - amazon-music
   - apache-directory-studio
   - atom
   - avidemux
@@ -239,30 +283,29 @@ homebrew_cask_packages:
   - citrix-receiver
   - cyberduck
   - dia
+  - disk-inventory-x
+  - docker
   - firefox
-  - freecol
   - freemind
   - gimp
   - gog-galaxy
   - google-chrome
   - handbrake
-  - handbrakebatch
-  - hedgewars
   - inkscape
   - iterm2
   - java
+  - julia
   - keepassx
   - kodi
   - libreoffice
-  - macvim
+  - libreoffice-language-pack
   - makemkv
-  - minecraft
   - openttd
   - owncloud
   - projectlibre
+  - pycharm-ce
   - scribus
   - scummvm
-  - silverlight
   - soundflower
   - steam
   - subler
@@ -273,12 +316,9 @@ homebrew_cask_packages:
   - transmission
   - tunnelblick
   - vagrant
-  - vagrant-manager
   - virtualbox
   - virtualbox-extension-pack
   - vlc
   - wireshark
-  - xmind
   - xquartz
-  - yed
   - yubikey-personalization-gui

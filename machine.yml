@@ -1,5 +1,0 @@
----
-
-- hosts: localhost
-  roles:
-      - { role: osxdesktop, when: "ansible_os_family == 'Darwin'" }

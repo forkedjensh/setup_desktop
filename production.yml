@@ -1,0 +1,7 @@
+---
+
+- hosts: localhost
+  tasks:
+    - name: Confgure Mac
+      include_tasks: osx.yml
+      when: "ansible_os_family == 'Darwin'"

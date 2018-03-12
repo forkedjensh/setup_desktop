@@ -1,7 +1,0 @@
----
-
-- name: Install Software
-  include: install.yml
-# - include: settings.yml
-- name: Set up environment
-  include: environment.yml
