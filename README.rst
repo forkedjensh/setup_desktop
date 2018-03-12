@@ -12,5 +12,5 @@ First run
 Periodic runs with ansible-pull
 ===============================
 
-Run ``ansible-pull https://github.com/forkedjensh/setup_desktop`` via cronjob
-or launchd.
+Run ``ansible-pull -U https://github.com/forkedjensh/setup_desktop`` via
+cronjob or launchd.
