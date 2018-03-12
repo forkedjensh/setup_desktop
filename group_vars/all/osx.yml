@@ -273,7 +273,6 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - adium
-  - airmedia
   - apache-directory-studio
   - atom
   - avidemux
@@ -306,7 +305,6 @@ homebrew_cask_packages:
   - pycharm-ce
   - scribus
   - scummvm
-  - soundflower
   - steam
   - subler
   - teamviewer
@@ -321,4 +319,3 @@ homebrew_cask_packages:
   - vlc
   - wireshark
   - xquartz
-  - yubikey-personalization-gui
