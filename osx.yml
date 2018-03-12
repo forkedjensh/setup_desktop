@@ -1,35 +1,35 @@
 ---
 
-# - name: Activate hombrew taps
-#   homebrew_tap:
-#     tap: "{{ item }}"
-#     state: present
-#   with_items: "{{ homebrew_taps }}"
+- name: Activate hombrew taps
+  homebrew_tap:
+    tap: "{{ item }}"
+    state: present
+  with_items: "{{ homebrew_taps }}"
 
-# - name: Install homebrew packages
-#   homebrew:
-#     name: "{{ item }}"
-#     update_homebrew: True
-#     state: latest
-#   with_items: "{{ homebrew_packages }}"
+- name: Install homebrew packages
+  homebrew:
+    name: "{{ item }}"
+    update_homebrew: True
+    state: latest
+  with_items: "{{ homebrew_packages }}"
 
-# - name: Install homebrew casks
-#   homebrew_cask:
-#     name: "{{ item }}"
-#     state: present
-#   with_items: "{{ homebrew_cask_packages }}"
+- name: Install homebrew casks
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ homebrew_cask_packages }}"
 
-# - name: Create vim directory structure
-#   file:
-#     path: "{{ item }}"
-#     state: directory
-#   with_items: "{{ vim_dirs }}"
+- name: Create vim directory structure
+  file:
+    path: "{{ item }}"
+    state: directory
+  with_items: "{{ vim_dirs }}"
 
-# - name: Install vim plugins
-#   git:
-#     repo: "https://github.com/{{ item }}"
-#     dest: "{{ vim_plugin_target }}{{ item }}"
-#   with_items: "{{ vim_plugins }}"
+- name: Install vim plugins
+  git:
+    repo: "https://github.com/{{ item }}"
+    dest: "{{ vim_plugin_target }}{{ item }}"
+  with_items: "{{ vim_plugins }}"
 
 - name: Get dot files
   git:
@@ -41,8 +41,6 @@
     paths: ~/dotfiles/
     pattern: _*
   register: dotfiles
-
-- debug: var=dotfiles
 
 - name: Link dot files
   file: 
