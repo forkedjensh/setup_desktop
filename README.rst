@@ -6,7 +6,7 @@ First run
 =========
 
 1. Run ``bin/bootstrap_osx.sh`` to get hombebrew and ansible
-2. Run ``ansible-playbook production.yml`` to install and configure
+2. Run ``ansible-playbook local.yml`` to install and configure
    the new desktop
 
 Periodic runs with ansible-pull
