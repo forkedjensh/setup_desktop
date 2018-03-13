@@ -18,33 +18,3 @@
     name: "{{ item }}"
     state: present
   with_items: "{{ homebrew_cask_packages }}"
-
-- name: Create vim directory structure
-  file:
-    path: "{{ item }}"
-    state: directory
-  with_items: "{{ vim_dirs }}"
-
-- name: Install vim plugins
-  git:
-    repo: "https://github.com/{{ item }}"
-    dest: "{{ vim_plugin_target }}{{ item.split('/')[1] }}"
-  with_items: "{{ vim_plugins }}"
-
-- name: Get dot files
-  git:
-    repo: https://github.com/forkedjensh/dotfiles
-    dest: ~/dotfiles/
-
-- name: Find dot files
-  find:
-    paths: ~/dotfiles/
-    pattern: _*
-  register: dotfiles
-
-- name: Link dot files
-  file: 
-    src: "{{ item.path }}"
-    dest: "{{ item.path | regex_replace('dotfiles/_', '.') }}"
-    state: link
-  with_items: "{{ dotfiles.files }}"

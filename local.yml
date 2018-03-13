@@ -1,7 +1,10 @@
 ---
 
-- hosts: localhost
+- name: Setup desktop
+  hosts: localhost
   tasks:
-    - name: Confgure Mac
+    - name: Configure Mac
       include_tasks: osx.yml
       when: "ansible_os_family == 'Darwin'"
+    - name: Do generic tasks
+      include_tasks: generic.yml
