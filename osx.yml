@@ -6,15 +6,15 @@
     state: present
   with_items: "{{ homebrew_taps }}"
 
+- name: Install homebrew casks
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ homebrew_cask_packages }}"
+
 - name: Install homebrew packages
   homebrew:
     name: "{{ item }}"
     update_homebrew: True
     state: latest
   with_items: "{{ homebrew_packages }}"
-
-- name: Install homebrew casks
-  homebrew_cask:
-    name: "{{ item }}"
-    state: present
-  with_items: "{{ homebrew_cask_packages }}"
