@@ -6,15 +6,23 @@
     state: present
   with_items: "{{ homebrew_taps }}"
 
+- name: Update homebrew's package list
+  homebrew:
+    update_homebrew: True
+
+- name: Install XQuartz first
+  homebrew_cask:
+    name: xquartz
+    state: present
+
+- name: Install homebrew packages
+  homebrew:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ homebrew_packages }}"
+
 - name: Install homebrew casks
   homebrew_cask:
     name: "{{ item }}"
     state: present
   with_items: "{{ homebrew_cask_packages }}"
-
-- name: Install homebrew packages
-  homebrew:
-    name: "{{ item }}"
-    update_homebrew: True
-    state: latest
-  with_items: "{{ homebrew_packages }}"
