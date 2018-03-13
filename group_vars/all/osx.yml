@@ -13,7 +13,6 @@ homebrew_packages:
   - atkmm
   - autoconf
   - autoconf-archive
-  - autoenv
   - automake
   - bash-completion
   - bazaar
