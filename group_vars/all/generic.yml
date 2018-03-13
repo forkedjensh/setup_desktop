@@ -1,0 +1,34 @@
+---
+
+vim_dirs:
+  - ~/.vim/backup
+  - ~/.vim/undo
+  - ~/.vim/swp
+  - ~/.vim/pack/mypack/start
+  - ~/.vim/pack/mypack/opt
+
+vim_plugin_target: ~/.vim/pack/mypack/start/
+
+vim_plugins:
+  - kien/ctrlp.vim
+  - tpope/vim-commentary
+  - tpope/vim-surround
+  - tpope/vim-unimpaired
+  - tpope/vim-vinegar
+  - honza/vim-snippets
+  - SirVer/ultisnips
+  - maralla/completor.vim
+  - dhruvasagar/vim-table-mode
+  - jmcantrell/vim-virtualenv
+  - majutsushi/tagbar
+  - tpope/vim-fugitive
+  - w0rp/ale
+  - Yggdroot/indentLine
+  - forkedjensh/plantuml-syntax
+  - pearofducks/ansible-vim
+  - Rykka/riv.vim
+  - wannesm/wmgraphviz.vim
+  - lifepillar/vim-solarized8
+  - morhetz/gruvbox
+  - itchyny/lightline.vim
+  - mgee/lightline-bufferline
