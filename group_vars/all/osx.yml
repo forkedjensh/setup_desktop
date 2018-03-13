@@ -36,9 +36,6 @@ vim_plugins:
 homebrew_taps:
   - caskroom/cask
   - caskroom/fonts
-  - homebrew/dupes
-  - homebrew/science
-  - homebrew/x11
 
 homebrew_packages:
   - a2ps
@@ -107,7 +104,6 @@ homebrew_packages:
   - glib
   - glibmm
   - gmp
-  - gmp@4
   - gnu-sed
   - gnupg
   - gnupg2
@@ -127,11 +123,10 @@ homebrew_packages:
   - htop-osx
   - icu4c
   - iperf
-  - ipython@5
+  - ipython
   - ircii
   - irssi
   - isl
-  - isl@0.12
   - jasper
   - jbig2dec
   - jpeg
@@ -175,7 +170,6 @@ homebrew_packages:
   - little-cms
   - little-cms2
   - lua
-  - lua@5.1
   - lzip
   - lzo
   - macvim
@@ -198,7 +192,6 @@ homebrew_packages:
   - openjpeg
   - openldap
   - openssl
-  - openssl@1.1
   - opus
   - orc
   - ossp-uuid
@@ -229,7 +222,6 @@ homebrew_packages:
   - pyqt
   - python
   - python3
-  - python@2
   - qemu
   - qt
   - qt5
