@@ -248,6 +248,7 @@ homebrew_cask_packages:
   - libreoffice-language-pack
   - makemkv
   - openttd
+  - osxfuse
   - owncloud
   - projectlibre
   - pycharm-ce
