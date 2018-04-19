@@ -246,6 +246,7 @@ homebrew_cask_packages:
   - kodi
   - libreoffice
   - libreoffice-language-pack
+  - macpass
   - makemkv
   - openttd
   - osxfuse
