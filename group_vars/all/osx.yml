@@ -178,6 +178,8 @@ homebrew_packages:
   - pth
   - pwgen
   - python
+  - pyenv
+  - pyenv-virtualenv
   - qemu
   - qt
   - qt5

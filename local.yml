@@ -1,10 +1,13 @@
 ---
 
 - name: Setup desktop
-  hosts: localhost
+  hosts: all
   tasks:
     - name: Configure Mac
       include_tasks: osx.yml
       when: "ansible_os_family == 'Darwin'"
+    - name: Configure Ubuntu
+      include_tasks: ubuntu.yml
+      when: "ansible_distribution == 'Ubuntu'"
     - name: Do generic tasks
       include_tasks: generic.yml
