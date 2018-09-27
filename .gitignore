@@ -1,2 +1,4 @@
 *.retry
 *.un~
+/*.log
+/.vagrant
