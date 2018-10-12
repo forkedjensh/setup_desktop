@@ -1,9 +1,5 @@
 ---
 
-homebrew_taps:
-  - caskroom/cask
-  - caskroom/fonts
-
 homebrew_packages:
   - a2ps
   - adns
