@@ -4,9 +4,11 @@
   homebrew:
     update_homebrew: True
 
-- name: Install XQuartz first
+- name: Install prequisits
   homebrew_cask:
-    name: xquartz
+    name:
+      - xquartz
+      - java
     state: present
 
 - name: Install homebrew packages
