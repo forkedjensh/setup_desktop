@@ -31,7 +31,6 @@ homebrew_packages:
   - d-bus
   - dbus
   - ddrescue
-  - dirmngr
   - docbook
   - docbook-xsl
   - dos2unix
@@ -222,7 +221,7 @@ homebrew_cask_packages:
   - apache-directory-studio
   - atom
   - avidemux
-  - basictex
+  - mactex
   - battle-net
   - chromium
   - citrix-receiver
