@@ -71,7 +71,6 @@ homebrew_packages:
   - gnupg2
   - gnutls
   - gobject-introspection
-  - gpg-agent
   - graphite2
   - graphviz
   - gsasl
