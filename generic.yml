@@ -29,3 +29,9 @@
     dest: "{{ item.path | regex_replace('dotfiles/_', '.') }}"
     state: link
   with_items: "{{ dotfiles.files }}"
+
+- name: Install rst2ctags.py
+  get_url:
+    url: https://raw.githubusercontent.com/jszakmeister/rst2ctags/master/rst2ctags.py
+    dest: ~/bin/rst2ctags.py
+    mode: 0700
