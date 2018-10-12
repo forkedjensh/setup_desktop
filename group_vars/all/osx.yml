@@ -132,7 +132,6 @@ homebrew_packages:
   - lzip
   - lzo
   - macvim
-  - maven
   - media-info
   - mercurial
   - mkvtoolnix
