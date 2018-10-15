@@ -212,6 +212,7 @@ homebrew_packages:
   - yajl
   - yasm
   - zeromq
+  - zlib
   - zsh
 
 homebrew_cask_packages:
