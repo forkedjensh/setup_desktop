@@ -223,7 +223,7 @@ homebrew_cask_packages:
   - mactex
   - battle-net
   - chromium
-  - citrix-receiver
+  - citrix-workspace
   - cyberduck
   - dia
   - disk-inventory-x
